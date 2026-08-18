@@ -1,0 +1,35 @@
+{
+  "name": "genpark-synthetic-instruction-dataset-generator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Automated synthetic instruction tuning dataset generator with Alpaca/ShareGPT schemas & quality scoring.",
+  "author": "genpark",
+  "category": "developer",
+  "tags": [
+    "synthetic-data",
+    "instruction-tuning",
+    "fine-tuning",
+    "alpaca-dataset",
+    "dataset-generator"
+  ],
+  "inputs": {
+    "domain_topic": {
+      "type": "string"
+    },
+    "samples_count": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "dataset_samples": {
+      "type": "array"
+    },
+    "diversity_score_pct": {
+      "type": "number"
+    },
+    "export_format": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
